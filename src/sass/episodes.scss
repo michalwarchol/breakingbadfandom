@@ -1,0 +1,30 @@
+.episodes{
+    min-height: 100vh;
+    margin-top: 20px;
+    color: $text-color-1;
+    .episode{
+        border-bottom: 2px solid $text-color-1;
+        padding: 0;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: $background-hover-color;
+        }
+        .head{
+            border-bottom: 1px solid $text-color-1;
+            width: 100%;
+            .arrow{
+                transition: transform ease-in-out 0.3s;
+            }
+            i{
+                font-size: 120%;
+            }
+        }
+        .info{
+            height: 0;
+            overflow: hidden;
+            transition: height ease-in-out 0.3s, padding-top ease-in-out 0.3s;
+        }
+    }
+}

@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Heart Breaking Bad";
+  src: local("Heart Breaking Bad"), url("../fonts/Heart Breaking Bad.otf") format("truetype");
+}
+@font-face {
+  font-family: "Baloo Da 2";
+  src: local("Baloo Da 2"), url("../fonts/BalooDa2-Regular.ttf") format("truetype");
+}
+.characters {
+  color: red;
+}
+.characters .content .character {
+  padding: 20px;
+}
+.characters .content .character .photo {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .characters .content .character .photo {
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .characters .content .character .photo {
+    height: 300px;
+  }
+}
+.characters .content .character .photo img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 992px) {
+  .characters .content .character .photo img {
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .characters .content .character .photo img {
+    height: 300px;
+  }
+}
+.characters .content .character .name {
+  font-size: 150%;
+  color: #fefae0;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.characters .content .character .info {
+  color: #fefae0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0 10px 20px;
+}
+.characters .content .character .info h4 {
+  font-size: 100%;
+}
+.characters .characterempty {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+.characters .characterempty div {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.characters .pagination {
+  padding: 20px;
+}
+.characters .pagination .paginationbutton {
+  padding: 10px 20px;
+  color: #fefae0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.characters .pagination .paginationbutton h3 {
+  margin: 0;
+}
+.characters .pagination .paginationbutton:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.characters .pagination .paginationtextbutton {
+  padding: 10px 20px;
+  color: #fefae0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.characters .pagination .paginationtextbutton h3 {
+  margin: 0;
+}
+.characters .pagination .paginationtextbutton:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.episodes {
+  min-height: 100vh;
+  margin-top: 20px;
+  color: #fefae0;
+}
+.episodes .episode {
+  border-bottom: 2px solid #fefae0;
+  padding: 0;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.episodes .episode:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.episodes .episode .head {
+  border-bottom: 1px solid #fefae0;
+  width: 100%;
+}
+.episodes .episode .head .arrow {
+  transition: transform ease-in-out 0.3s;
+}
+.episodes .episode .head i {
+  font-size: 120%;
+}
+.episodes .episode .info {
+  height: 0;
+  overflow: hidden;
+  transition: height ease-in-out 0.3s, padding-top ease-in-out 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-image: radial-gradient(#45b06c, black);
+  background-attachment: fixed;
+  color: #45b06c;
+  min-height: 100vh;
+  font-family: "Baloo Da 2";
+}
+.app .main header {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.app .main header h1 {
+  margin-top: 20px;
+  font-family: "Heart Breaking Bad";
+  font-size: 400%;
+  line-height: 60px;
+}
+.app .main header h1 span:first-child {
+  padding-top: 10px;
+}
+.app .main .navbar a {
+  width: 20%;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.app .main .navbar a:hover {
+  background-color: #45b06c;
+}
+.app .main .navbar_option {
+  padding: 20px;
+  text-align: center;
+  color: #fefae0;
+  text-decoration: none;
+  font-size: 120%;
+}
+.app .main .buttons .bigcircuralbutton {
+  position: relative;
+  padding-top: 20px;
+  color: #fefae0;
+}
+.app .main .buttons .bigcircuralbutton_image {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.app .main .buttons .bigcircuralbutton_image img {
+  width: 100%;
+  height: 100%;
+}
+.app .main .buttons .bigcircuralbutton_image h1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+.app .main .buttons .bigcircuralbutton_image h1:hover {
+  opacity: 1;
+}
+.app .main .sidebar {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.app .main .sidebar figure {
+  color: #fefae0;
+  padding: 20px;
+  width: 100%;
+}
+.app .main .sidebar figure img {
+  width: 100%;
+}
+.app .main .sidebar figure figcaption {
+  margin-top: 20px;
+}
+.app .main .bigquote {
+  color: #fefae0;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.app .main footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+}
+.app .main footer .info {
+  padding-top: 20px;
+}
+.app .main footer .socials a {
+  color: #45b06c;
+  font-size: 200%;
+}
+.app .main footer .socials a:hover {
+  color: #28673f;
+}
+.app .main footer .copyright {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=stlye.css.map */

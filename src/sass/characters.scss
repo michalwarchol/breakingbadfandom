@@ -1,0 +1,63 @@
+.characters{
+    color: red;
+    .content{
+        .character{
+            padding: 20px;
+            .photo{
+                width: 100%;
+                @media(max-width: 992px){
+                    height: 400px;
+                }
+                @media(min-width: 992px){
+                    height: 300px;
+                }
+                img{
+                    width: 100%;
+                    @media(max-width: 992px){
+                        height: 400px;
+                    }
+                    @media(min-width: 992px){
+                        height: 300px;
+                    }
+                    object-fit: cover;
+                    object-position: top;
+                }    
+            }
+            .name{
+                font-size: 150%;
+                color: $text-color-1;
+                background-color: $background-hover-color;
+                text-align: center;
+            }
+            .info{
+                color: $text-color-1;
+                width: 100%;
+                height: 100%;
+                background-color: $background-hover-color;
+                padding: 10px 0 10px 20px;
+                h4{
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+    .characterempty{
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        div{
+            background-color: $background-hover-color;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .pagination{
+        padding: 20px;
+        .paginationbutton{
+            @include paginationButtons;
+        }
+        .paginationtextbutton{
+            @include paginationButtons;
+        }
+    }
+}

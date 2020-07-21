@@ -1,0 +1,9 @@
+.quotes{
+    min-height: 100vh;
+    .quote{
+        background-color: $background-hover-color;
+        margin: 10px 0;
+        padding: 10px;
+        color: $text-color-1;
+    }
+}

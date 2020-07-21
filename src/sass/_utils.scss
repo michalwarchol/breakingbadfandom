@@ -1,0 +1,24 @@
+//fonts
+@font-face {
+    font-family: 'Heart Breaking Bad';
+    src: local('Heart Breaking Bad'), url('../fonts/Heart\ Breaking\ Bad.otf') format('truetype');
+  }
+
+@font-face {
+  font-family: 'Baloo Da 2';
+  src: local('Baloo Da 2'), url('../fonts/BalooDa2-Regular.ttf') format('truetype');
+}
+
+//mixins
+@mixin paginationButtons {
+  padding: 10px 20px;
+  color: $text-color-1;
+  border-radius: 10px;
+  cursor: pointer;
+  h3{
+    margin: 0;
+  }
+  &:hover{
+    background-color: $background-hover-color;
+  }
+}
