@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
                     <h5>email: mwarchol33@gmail.com</h5>
                 </div>
                 <div className="socials d-flex col-12 col-md-6 align-items-center justify-content-center">
-                    <Media link="#" image="icon-github-circled" />
-                    <Media link="#" image="icon-linkedin" />
+                    <Media link="https://github.com/michalwarchol" image="icon-github-circled" />
+                    <Media link="https://www.linkedin.com/in/micha%C5%82-warcho%C5%82-2033a51a0/" image="icon-linkedin" />
                 </div>
             </div>
             <div className="copyright d-flex col-12 justify-content-center">
